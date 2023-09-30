@@ -84,6 +84,8 @@ a{
 }
 
 .contenido > .Subir{
+    margin-top: 40px;
+    margin-bottom: 40px;
     width: 80px;
     border: 2px solid #8a89894c;
 }
@@ -130,6 +132,20 @@ ul li{
 
 .Sombreado{
     background-color: #f5f5f5;
+}
+
+.BarraContenido {
+    flex-direction: column;
+}
+
+.TituloTabla {
+    justify-content: start;
+}
+
+.ContenidoTabla {
+    padding-top: 10px;
+    padding-left: 5px;
+    justify-content: end;
 }
 /*Pag4*/
 /*  #D14836
