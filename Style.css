@@ -6,7 +6,7 @@
 }
 
 header{
-    background-color: #1F1717;
+    background-color: #41644A;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -19,7 +19,12 @@ div{
     display: flex;
 }
 
+.OP{
+    justify-content: space-between;
+}
+
 .Banner{
+    padding-left: 15px;
     height: 60px;
     justify-content: start;
     align-content: start;
@@ -30,6 +35,10 @@ div{
 .Banner > div{
     padding: 2px;
     justify-content: start;
+}
+
+.SombraBanner{
+    filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.7)); 
 }
 
 .Barra{
@@ -47,17 +56,28 @@ div{
 }
 
 .Barra > div:hover{
-    background-color: #6f6f6f;
+    filter: drop-shadow(0 0px 3px rgba(0, 0, 0, 0.947));
 }
 
 .content{
     justify-content: space-between;
+    background-color: white;
 }
 
-.bordes{
-    background-color: #F4BF96;
+.bordeI{
+    background-color: #E86A33;
     height: auto;
     width: 190px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.bordeD{
+    background-color: #E86A33;
+    height: auto;
+    width: 190px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .contenido{
@@ -75,7 +95,7 @@ div{
 }
 
 footer {
-    background-color: #1F1717;
+    background-color: #41644A;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -100,8 +120,12 @@ footer div{
     margin-right: 20px;
 }
 
+.DerechoAutor{
+    font-size: small;
+}
+
 .Redes div:hover{
-    background-color: #4e4e4e;
+    filter: drop-shadow(0 0px 3px rgba(0, 0, 0, 0.947));
     border-radius: 5px;
 }
 
@@ -121,7 +145,7 @@ a{
 }
 
 .Subir:hover{
-    background-color: #F4BF96;
+    filter: drop-shadow(0 0px 3px #F4BF96);
     border-radius: 5px;
 }
 
@@ -132,7 +156,7 @@ a{
 /*Pag3 - Nosotros */
 
 .Nosotros{
-    background-color: #595959;
+    filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.961));
 }
 
 .Titulos{
@@ -163,7 +187,7 @@ ul li{
 
 .Sombreado{
     justify-content: center;
-    background-color: #FCF5ED;
+    background-color: #F2E3DB;
     margin-top: 10px;
     border-radius: 20px;
 }
@@ -183,17 +207,15 @@ ul li{
 }
 
 .ContenidoTabla > a {
-    font-size: small;
+    font-size: large;
 }
 
 .ContenidoTabla > a:hover {
-    background-color: #6f6f6f;
+    filter: drop-shadow(0 0px 3px #823b1d);
 }
 
 .Tabla {
-    background-image: url(Img/FondoTablaContenido.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-radius: 10px;
     flex-direction: column;
     margin-top: 10px;
     margin-left: 30px;
@@ -211,20 +233,27 @@ ul li{
     object-fit: cover;
     width:100%;
     height:100%;
+    filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.7));
 }
 /*Pag6* - Directivos*/
 
 .Titulos > .Perfil {
     width: 80px;
+    height: 80px;
 }
 
 .Perfil {
     margin-top: 5px;
-    width: 80px;
-    height: 80px;
-    border: inherit #333;
+    border: #333;
     border-style: outset;
     border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Perfil > img{
+    width: 80px;
+    height: 80px;
 }
 
 h4 {
