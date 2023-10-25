@@ -6,7 +6,8 @@
 }
 
 header{
-    background-color: #333;
+    background-color: #1F1717;
+    padding-top: 10px;
 }
 
 body{
@@ -18,18 +19,21 @@ div{
 }
 
 .Banner{
-    height: 180px;
-    justify-content: center;
+    height: 60px;
+    justify-content: start;
+    align-content: start;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .Banner > div{
     padding: 2px;
-    justify-content: center;
+    justify-content: start;
 }
 
 .Barra{
     justify-content: center;
-    border-top: 2px solid #9c9c9c;
+    align-items: center;
 }
 
 .Barra > div{
@@ -38,6 +42,7 @@ div{
     align-items: center;
     height: 40px;
     color: #d8d8d8;
+    border-radius: 5px;
 }
 
 .Barra > div:hover{
@@ -49,7 +54,7 @@ div{
 }
 
 .bordes{
-    background-color: #9c9c9c;
+    background-color: #F4BF96;
     height: auto;
     width: 190px;
 }
@@ -69,7 +74,7 @@ div{
 }
 
 footer {
-    background-color: #333;
+    background-color: #1F1717;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -96,6 +101,7 @@ footer div{
 
 .Redes div:hover{
     background-color: #4e4e4e;
+    border-radius: 5px;
 }
 
 a{
@@ -110,15 +116,16 @@ a{
     margin-top: 40px;
     margin-bottom: 40px;
     width: 80px;
-    border: 2px solid #8a89894c;
+    border-radius: 5px;
 }
 
 .Subir:hover{
-    background-color: #6f6f6f;
-    border-style: solid;
+    background-color: #F4BF96;
+    border-radius: 5px;
 }
 
 /*Pag1*/
+
 /*Pag2*/
 
 /*Pag3 - Nosotros */
@@ -155,8 +162,9 @@ ul li{
 
 .Sombreado{
     justify-content: center;
-    background-color: #f5f5f5;
+    background-color: #FCF5ED;
     margin-top: 10px;
+    border-radius: 20px;
 }
 
 .BarraContenido {
@@ -215,6 +223,7 @@ ul li{
     height: 80px;
     border: inherit #333;
     border-style: outset;
+    border-radius: 5px;
 }
 
 h4 {
