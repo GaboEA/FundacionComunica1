@@ -633,9 +633,9 @@ h4 {
         width: fit-content;
     }
 
-    .news_picture{
+    /* .news_picture{
         width: 60%;
-    }
+    } */
 
     .news_img{
         width: 100%;
@@ -654,5 +654,9 @@ h4 {
 
     .subtitle{
         text-align: center;
+    }
+
+    .news_up{
+        clip-path: polygon(50% 5%, 100% 7%, 100% 100%, 0 100%, 0 7%);
     }
 }
