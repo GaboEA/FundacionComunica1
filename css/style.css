@@ -612,5 +612,26 @@ h4 {
     .news_picture{
         width: 30%;
     }
+}
 
+@media (max-width: 400px){
+    .news_container{
+        width: fit-content;
+    }
+
+    .news_picture{
+        width: 100%;
+        height: 100%;
+    }
+
+    .news_img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .video_youtube{
+        padding-top: 10px;
+        width: 85%;
+        height: 85%;
+    }
 }
