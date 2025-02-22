@@ -603,3 +603,14 @@ h4 {
     }
 
 }
+
+@media (max-width: 600px){
+    .news_container{
+        width: auto;
+    }
+
+    .news_picture{
+        width: 30%;
+    }
+
+}
