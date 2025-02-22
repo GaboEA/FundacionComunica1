@@ -1,50 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundación Comunica</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/Img/fc_Ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<header>
-    <div class="OP">
-        <div class="Banner">
-            <div></div>
-            <div>
-                <img class="SombraBanner" src="Img/Banner.png" alt="">
-            </div>
-            <div></div>
-        </div>
-        <div class="Barra">
-            <div>
-                <nav><a href="index.html">Inicio</a></nav>
-            </div>
-            <div>
-                <nav><a href="historia.html">Historia</a></nav>
-            </div>
-            <div>
-                <nav><a href="nosotros.html">Nosotros</a></nav>
-            </div>
-            <div class="Nosotros">
-                <nav><a href="contactenos.html">Contáctenos</a></nav>
-            </div>
-        </div>
-        <div></div>
-    </div>
-</header>
 
 <body>
-    <div class="content">
-        <div class="bordeI"></div>
-        <div class="contenido">
-            <div class="Titulos">
-                <h2>Ubicación</h2>
-                <div class="Sombreado">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d248.58498099711102!2d-75.63961867381579!3d4.52907165792607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMzEnNDQuNyJOIDc1wrAzOCcyMi4zIlc!5e0!3m2!1ses!2sco!4v1696139232634!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav_logo">
+                <img class="SombraBanner banner_fc" src="Img/Banner2.png" alt="Fundación Comunica">
             </div>
+            <ul class="nav_link nav_link--menu">
+                <li class="nav_items"> <a href="index.html" class="nav_links">Inicio</a></li>
+                <li class="nav_items"> <a href="historia.html" class="nav_links">Historia</a></li>
+                <li class="nav_items"> <a href="nosotros.html" class="nav_links">Nosotros</a></li>
+                <li class="nav_items"> <a href="contactenos.html" class="nav_links">Contáctenos</a></li>
+                <img src="Img/close_menu.svg" alt="cerrar" class="nav_close">
+            </ul>
+    
+            <div class="nav_menu">
+                <img src="Img/menu.svg" alt="menu" class="nav_img">
+            </div>
+            
+        </nav>
+    </header>
+    
+    <button onclick="topFunction()" id="button_up" >
+        <img class="arrow_up" src="Img/arrow_up.svg" alt="Subir">
+    </button>
 
-            <div class="Titulos">
+    <section class="ubication_container">
+        <div class="information">
+            <h2 class="subtitle">Ubicación</h2>
+        </div>
+        <div class="ubication_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d248.58498099711102!2d-75.63961867381579!3d4.52907165792607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMzEnNDQuNyJOIDc1wrAzOCcyMi4zIlc!5e0!3m2!1ses!2sco!4v1696139232634!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="information">
+            <h2 class="subtitle">Redes Sociales</h2>
+        </div>
+        <div class="news_container container">
+            <img src="Img/Left_arrow.svg" alt="left" class="news_arrow" id="before">
+            <section class="news_body news_body--show" data-id="1">
+                <div class="news_texts">
+                    <p class="new_paragraph">Outlook</p>
+                </div>
+                <div class="news_picture">
+                    <a class="social_link" href="mailto:fundacioncomunica@outlook.com">
+                        <img src="Img/outlook_icon.svg" alt="outlook" class="news_img">
+                    </a>
+                </div>
+            </section>
+            <section class="news_body" data-id="2">
+                <div class="news_texts">
+                    <p class="new_paragraph">Facebook</p>
+                </div>
+                <div class="news_picture">
+                    <a class="social_link" href="https://www.facebook.com/fundacioncomunica.org">
+                        <img src="Img/facebook_icon.svg" alt="facebook" class="news_img">
+                    </a>
+                </div>
+            </section>
+            <section class="news_body" data-id="3">
+                <div class="news_texts">
+                    <p class="new_paragraph">WhatsApp</p>
+                </div>
+                <figure class="news_picture">
+                    <a class="social_link" href=
+                        "https://api.whatsapp.com/send?phone=573248292024&text=Hola+Quisiera+Consultar+Sobre+El+Siguiente+Tema&utm_source=Web&utm_medium=Boton_Flotante_Home&utm_campaign=Masificacion_WhatsApp_Boton_Flotante">
+                        <img src="Img/whatsapp_icon.svg" alt="whatsapp" class="news_img">
+                    </a>
+                </figure>
+            </section>
+            <img src="Img/Right_arrow.svg" alt="right" class="news_arrow" id="next">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_social">
+            <div title="Outlook">
+                <img class="social_icon" src="Img/outlook_icon.svg" alt="Outlook">
+            </div>
+            <div class="TxtRedes" title="Outlook"><a class="footer_link" href="mailto:fundacioncomunica@outlook.com">
+                <p>fundacioncomunica@outlook.com</p></a></div>
+            <div title="Facebook">
+                <img class="social_icon" src="Img/facebook_icon.svg" alt="Facebook">
+            </div>
+            <div class="TxtRedes" title="Facebook"><a class="footer_link" href="http://www.facebook.com/fundacioncomunica.org"><p>fundacioncomunica</p></a></div>
+            <div title="WhatsApp">
+                <img class="social_icon" src="Img/whatsapp_icon.svg" alt="WhatsApp">
+            </div>
+            <div class="TxtRedes" title="WhatsApp"><a class="footer_link" href=
+                "https://api.whatsapp.com/send?phone=573248292024&text=Hola+Quisiera+Consultar+Sobre+El+Siguiente+Tema&utm_source=Web&utm_medium=Boton_Flotante_Home&utm_campaign=Masificacion_WhatsApp_Boton_Flotante">
+                <p>324 8292024</p></a>
+            </div>
+        </div>
+        <a class="DerechoAutor"><p>Derechos de autor © 2023 Fundación Comunica</p></a>
+    </footer>
+
+    <script src="/js/buttonUp.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
+
+<style>
+    /* .news_picture{
+        display: grid;
+        justify-items: center;
+    } */
+
+    .news_img{
+        width: 50%;
+        height: 50%;
+        cursor: pointer;
+    }
+
+    .social_link{
+        text-align: center;
+        align-content: center;
+        cursor: default;
+    }
+
+    .news_img:hover{
+        filter: drop-shadow(0 0 3px #00000074);
+    }
+
+    .news_container{
+        justify-content: center;
+        background-color: #f2e3db;
+        background-image:  radial-gradient(#e86a33 0.5px, transparent 0.5px), radial-gradient(#e86a33 0.5px, #f2e3db 0.5px);
+        background-size: 20px 20px;
+        background-position: 0 0,10px 10px;
+        border-radius: 20px;
+        padding-top: 2rem;
+    }
+
+    .news{
+        background-image: none;
+        background-color: white;
+    }
+
+</style>
+
+
+<!-- 
+<body>
+               <div class="Titulos">
                 <h2>Redes Sociales</h2>
                 <h3>Outlook</h3>
                 <div class="Sombreado">
@@ -100,4 +209,4 @@
         <a class="DerechoAutor"><p>Derechos de autor © 2023 Fundación Comunica</p></a>
     </footer>
 </body>
-</html>
+</html> -->

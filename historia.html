@@ -1,74 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundación Comunica</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/Img/fc_Ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<header>
-    <div class="OP">
-        <div class="Banner">
-            <div></div>
-            <div>
-                <img class="SombraBanner" src="Img/Banner.png" alt="">
-            </div>
-            <div></div>
-        </div>
-        
-        <div class="Barra">
-            <div>
-                <nav><a href="index.html">Inicio</a></nav>
-            </div>
-            <div class="Nosotros">
-                <nav><a href="historia.html">Historia</a></nav>
-            </div>
-            <div>
-                <nav><a href="nosotros.html">Nosotros</a></nav>
-            </div>
-            <div>
-                <nav><a href="contactenos.html">Contáctenos</a></nav>
-            </div>
-        </div>
-        <div></div>
-    </div>
-</header>
 
-<body>
-    <div class="content">
-        <div class="bordeI"></div>
-        <div class="contenido">
-            <div >
-            <P>
-            </P>
+<body class="history">
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav_logo">
+                <img class="SombraBanner banner_fc" src="Img/Banner2.png" alt="Fundación Comunica">
             </div>
-            <div class="Subir">
-                <nav>
-                    <a class="SubirN" href="historia.html">Ir arriba</a>
-                </nav>
+            <ul class="nav_link nav_link--menu">
+                <li class="nav_items"> <a href="index.html" class="nav_links">Inicio</a></li>
+                <li class="nav_items"> <a href="historia.html" class="nav_links">Historia</a></li>
+                <li class="nav_items"> <a href="nosotros.html" class="nav_links">Nosotros</a></li>
+                <li class="nav_items"> <a href="contactenos.html" class="nav_links">Contáctenos</a></li>
+                <img src="Img/close_menu.svg" alt="cerrar" class="nav_close">
+            </ul>
+    
+            <div class="nav_menu">
+                <img src="Img/menu.svg" alt="menu" class="nav_img">
             </div>
-        </div>
-        <div class="bordeD"></div>
-    </div>
-    <footer>
-        <div class="Redes">
+            
+        </nav>
+    </header>
+    
+    <button onclick="topFunction()" id="button_up" >
+        <img class="arrow_up" src="Img/arrow_up.svg" alt="Subir">
+    </button>
+
+    <section class="history_container">
+       
+    </section>
+
+    <footer class="footer">
+        <div class="footer_social">
             <div title="Outlook">
-                <img class="SombraBanner" src="Img/IconoOutlook.png" alt="Outlook">
+                <img class="social_icon" src="Img/outlook_icon.svg" alt="Outlook">
             </div>
-            <div class="TxtRedes" title="Outlook"><a href="mailto:fundacioncomunica@outlook.com"><p>fundacioncomunica@outlook.com</p></a></div>
+            <div class="TxtRedes" title="Outlook"><a class="footer_link" href="mailto:fundacioncomunica@outlook.com">
+                <p>fundacioncomunica@outlook.com</p></a></div>
             <div title="Facebook">
-                <img class="SombraBanner" src="Img/IconoFacebook.png" alt="Facebook">
+                <img class="social_icon" src="Img/facebook_icon.svg" alt="Facebook">
             </div>
-            <div class="TxtRedes" title="Facebook"><a href="http://www.facebook.com/fundacioncomunica.org"><p>fundacioncomunica</p></a></div>
+            <div class="TxtRedes" title="Facebook"><a class="footer_link" href="http://www.facebook.com/fundacioncomunica.org"><p>fundacioncomunica</p></a></div>
             <div title="WhatsApp">
-                <img class="SombraBanner" src="Img/IconoWhatsApp.png" alt="WhatsApp">
+                <img class="social_icon" src="Img/whatsapp_icon.svg" alt="WhatsApp">
             </div>
-            <div class="TxtRedes" title="WhatsApp"><a href=
+            <div class="TxtRedes" title="WhatsApp"><a class="footer_link" href=
                 "https://api.whatsapp.com/send?phone=573248292024&text=Hola+Quisiera+Consultar+Sobre+El+Siguiente+Tema&utm_source=Web&utm_medium=Boton_Flotante_Home&utm_campaign=Masificacion_WhatsApp_Boton_Flotante">
                 <p>324 8292024</p></a>
             </div>
         </div>
         <a class="DerechoAutor"><p>Derechos de autor © 2023 Fundación Comunica</p></a>
     </footer>
+
+    <script src="/js/buttonUp.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
+

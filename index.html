@@ -1,90 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundación Comunica</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/Img/fc_Ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+
+<meta name="title" content="Fundación Comunica" />
+<meta name="description" content="Contribuir con el mejoramiento de la calidad de vida y el crecimiento y desarrollo económico y social de poblaciones vulnerables en el territorio nacional." />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.fundacioncomunica.com/" />
+<meta property="og:title" content="Fundación Comunica" />
+<meta property="og:description" content="Contribuir con el mejoramiento de la calidad de vida y el crecimiento y desarrollo económico y social de poblaciones vulnerables en el territorio nacional." />
+<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://www.fundacioncomunica.com/" />
+<meta property="twitter:title" content="Fundación Comunica" />
+<meta property="twitter:description" content="Contribuir con el mejoramiento de la calidad de vida y el crecimiento y desarrollo económico y social de poblaciones vulnerables en el territorio nacional." />
+<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+<!-- Meta Tags Generated with https://metatags.io -->
+
 </head>
-<header>
-    <div class="OP">
-        <div class="Banner">
-            <div></div>
-            <div>
-                <img class="SombraBanner" src="Img/Banner2.png" alt="">
-            </div>
-            <div></div>
-        </div>
-
-        <div class="Barra">
-            <div>
-                <nav><a href="index.html">Inicio</a></nav>
-            </div>
-            <div>
-                <nav><a href="historia.html">Historia</a></nav>
-            </div>
-            <div>
-                <nav><a href="nosotros.html">Nosotros</a></nav>
-            </div>
-            <div>
-                <nav><a href="contactenos.html">Contáctenos</a></nav>
-            </div>
-        </div>
-
-        <div></div>
-    </div>
-</header>
-
 <body>
-    <div class="content">
-            <div class="bordeI"></div>
-            <div class="contenido">
-                <div class="Titulos">
-                    <h2>Noticias</h2>
-                    <div class="Sombreado">
-                        <P>
-                            LA FUNDACIÓN COMUNIDAD UNIDA POR CALARCÁ, en adelante “COMUNICA”,
-                            es una persona jurídica de derecho privado, de las reguladas,
-                            en lo pertinente, por los artículos 633 a 652 del Código Civil Colombiano, 
-                            el Decreto 1529 de 1990, el Decreto 2150 de 1995, el Decreto 427 de 1996 y
-                            demás normas concordantes. Se constituye como una entidad sin ánimo de lucro,
-                            de carácter permanente, independiente y autónomo y de utilidad común.
-                        </P>
-                    </div>
-                </div>
-                <div class="Titulos">
-                    <h2>Video Informativo</h2>
-                    <div class="Sombreado">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qTnWHc87_wo?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="Subir">
-                    <nav>
-                        <a class="SubirN" href="index.html">Ir arriba</a>
-                    </nav>
-                </div>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav_logo">
+                <img class="SombraBanner banner_fc" src="Img/Banner2.png" alt="Fundación Comunica">
             </div>
-            <div class="bordeD"></div>
-    </div>
-    <footer>
-        <div class="Redes">
+            <ul class="nav_link nav_link--menu">
+                <li class="nav_items"> <a href="index.html" class="nav_links">Inicio</a></li>
+                <li class="nav_items"> <a href="historia.html" class="nav_links">Historia</a></li>
+                <li class="nav_items"> <a href="nosotros.html" class="nav_links">Nosotros</a></li>
+                <li class="nav_items"> <a href="contactenos.html" class="nav_links">Contáctenos</a></li>
+                <img src="Img/close_menu.svg" alt="cerrar" class="nav_close">
+            </ul>
+    
+            <div class="nav_menu">
+                <img src="Img/menu.svg" alt="menu" class="nav_img">
+            </div>
+            
+        </nav>
+    </header>
+    
+    <button onclick="topFunction()" id="button_up" >
+        <img class="arrow_up" src="Img/arrow_up.svg" alt="Subir">
+    </button>
+
+    <section class="news">
+        <div class="information">
+            <h2 class="subtitle">Información</h2>
+        </div>
+        <div class="news_container container">
+            <img src="Img/Left_arrow.svg" alt="left" class="news_arrow" id="before">
+            <section class="news_body news_body--show" data-id="1">
+                <div class="news_texts">
+                    <p class="new_paragraph">Información de interes.</p>
+                </div>
+                <div class="news_picture">
+                    <img src="Img/new_update.png" alt="Información" class="news_img">
+                </div>
+            </section>
+            <section class="news_body" data-id="2">
+                <div class="news_texts">
+                    <p class="new_paragraph">La ganadería semi-intensiva, una propuesta para la construcción de la Paz Total en Colombia.</p>
+                </div>
+                <div class="news_picture">
+                    <a class="news_link" href="https://www.facebook.com/fundacioncomunica.org/posts/465689659938454?ref=embed_post">
+                        <img src="Img/ganadería.png" alt="Información" class="news_img">
+                    </a>
+                </div>
+            </section>
+            <section class="news_body" data-id="3">
+                <div class="news_texts">
+                    <p class="new_paragraph">Una propuesta para la construcción de la Paz Total en Colombia.</p>
+                </div>
+                <figure class="news_picture">
+                    <img src="Img/agricultura.jpg" alt="Información" class="news_img">
+                </figure>
+            </section>
+            <img src="Img/Right_arrow.svg" alt="right" class="news_arrow" id="next">
+        </div>
+    </section>
+    <section class="video_container">
+        <h2 class="subtitle">Video Informativo</h2>
+        <div class="video_insert">
+            <iframe class="video_youtube" width="560" height="315" src="https://www.youtube.com/embed/qTnWHc87_wo?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_social">
             <div title="Outlook">
-                <img class="SombraBanner" src="Img/IconoOutlook.png" alt="Outlook">
+                <img class="social_icon" src="Img/outlook_icon.svg" alt="Outlook">
             </div>
-            <div class="TxtRedes" title="Outlook"><a href="mailto:fundacioncomunica@outlook.com"><p>fundacioncomunica@outlook.com</p></a></div>
+            <div class="TxtRedes" title="Outlook"><a class="footer_link" href="mailto:fundacioncomunica@outlook.com">
+                <p>fundacioncomunica@outlook.com</p></a></div>
             <div title="Facebook">
-                <img class="SombraBanner" src="Img/IconoFacebook.png" alt="Facebook">
+                <img class="social_icon" src="Img/facebook_icon.svg" alt="Facebook">
             </div>
-            <div class="TxtRedes" title="Facebook"><a href="http://www.facebook.com/fundacioncomunica.org"><p>fundacioncomunica</p></a></div>
+            <div class="TxtRedes" title="Facebook"><a class="footer_link" href="http://www.facebook.com/fundacioncomunica.org"><p>fundacioncomunica</p></a></div>
             <div title="WhatsApp">
-                <img class="SombraBanner" src="Img/IconoWhatsApp.png" alt="WhatsApp">
+                <img class="social_icon" src="Img/whatsapp_icon.svg" alt="WhatsApp">
             </div>
-            <div class="TxtRedes" title="WhatsApp"><a href=
+            <div class="TxtRedes" title="WhatsApp"><a class="footer_link" href=
                 "https://api.whatsapp.com/send?phone=573248292024&text=Hola+Quisiera+Consultar+Sobre+El+Siguiente+Tema&utm_source=Web&utm_medium=Boton_Flotante_Home&utm_campaign=Masificacion_WhatsApp_Boton_Flotante">
                 <p>324 8292024</p></a>
             </div>
         </div>
         <a class="DerechoAutor"><p>Derechos de autor © 2023 Fundación Comunica</p></a>
     </footer>
+
+    <script src="/js/buttonUp.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
