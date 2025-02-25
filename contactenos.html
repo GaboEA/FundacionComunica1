@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundación Comunica</title>
     <link rel="icon" href="/Img/favicon.ico" type="image/x-icon">
-    <!-- <link rel="icon" href="/Img/favicon.ico"> -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
+
+    <meta name="theme-color" content="#f2e3db">
+
 </head>
 
 <body>
@@ -59,6 +62,7 @@
                     </a>
                 </div>
             </section>
+
             <section class="news_body" data-id="2">
                 <div class="news_texts">
                     <p class="new_paragraph">Facebook</p>
@@ -69,6 +73,7 @@
                     </a>
                 </div>
             </section>
+
             <section class="news_body" data-id="3">
                 <div class="news_texts">
                     <p class="new_paragraph">WhatsApp</p>
@@ -80,6 +85,7 @@
                     </a>
                 </figure>
             </section>
+
             <img src="Img/Right_arrow.svg" alt="right" class="news_arrow" id="next">
         </div>
     </section>
@@ -109,105 +115,39 @@
     <script src="/js/buttonUp.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/menu.js"></script>
+
+    <style>
+        .news_img{
+            width: 50%;
+            height: 50%;
+            cursor: pointer;
+        }
+    
+        .social_link{
+            text-align: center;
+            align-content: center;
+            cursor: default;
+        }
+    
+        .news_img:hover{
+            filter: drop-shadow(0 0 3px #00000074);
+        }
+    
+        .news_container{
+            justify-content: center;
+            background-color: #f2e3db;
+            background-image:  radial-gradient(#e86a33 0.5px, transparent 0.5px), radial-gradient(#e86a33 0.5px, #f2e3db 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0,10px 10px;
+            border-radius: 20px;
+            padding-top: 2rem;
+        }
+    
+        .news{
+            background-image: none;
+            background-color: white;
+        }
+    
+    </style>
 </body>
 </html>
-
-<style>
-    /* .news_picture{
-        display: grid;
-        justify-items: center;
-    } */
-
-    .news_img{
-        width: 50%;
-        height: 50%;
-        cursor: pointer;
-    }
-
-    .social_link{
-        text-align: center;
-        align-content: center;
-        cursor: default;
-    }
-
-    .news_img:hover{
-        filter: drop-shadow(0 0 3px #00000074);
-    }
-
-    .news_container{
-        justify-content: center;
-        background-color: #f2e3db;
-        background-image:  radial-gradient(#e86a33 0.5px, transparent 0.5px), radial-gradient(#e86a33 0.5px, #f2e3db 0.5px);
-        background-size: 20px 20px;
-        background-position: 0 0,10px 10px;
-        border-radius: 20px;
-        padding-top: 2rem;
-    }
-
-    .news{
-        background-image: none;
-        background-color: white;
-    }
-
-</style>
-
-
-<!-- 
-<body>
-               <div class="Titulos">
-                <h2>Redes Sociales</h2>
-                <h3>Outlook</h3>
-                <div class="Sombreado">
-                    <div>
-                        <p>fundacioncomunica@outlook.com</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="Titulos">
-                <h3>Facebook</h3>
-                <div class="Sombreado">
-                    <div>
-                        <p>www.facebook.com/fundacioncomunica.org</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="Titulos">
-                <h3>WhatsApp</h3>
-                <div class="Sombreado">
-                    <div>
-                        <p>+57 324 8292024</p>
-                    </div>
-                </div>
-            </div>
-            <div class="Subir">
-                <nav>
-                    <a class="SubirN" href="contactenos.html">Ir arriba</a>
-                </nav>
-            </div>
-        </div>
-        <div class="bordeD"></div>
-    </div>
-    <footer>
-        <div class="Redes">
-            <div title="Outlook">
-                <img class="SombraBanner" src="Img/IconoOutlook.png" alt="Outlook">
-            </div>
-            <div class="TxtRedes" title="Outlook"><a href="mailto:fundacioncomunica@outlook.com"><p>fundacioncomunica@outlook.com</p></a></div>
-            <div title="Facebook">
-                <img class="SombraBanner" src="Img/IconoFacebook.png" alt="Facebook">
-            </div>
-            <div class="TxtRedes" title="Facebook"><a href="http://www.facebook.com/fundacioncomunica.org"><p>fundacioncomunica</p></a></div>
-            <div title="WhatsApp">
-                <img class="SombraBanner" src="Img/IconoWhatsApp.png" alt="WhatsApp">
-            </div>
-            <div class="TxtRedes" title="WhatsApp"><a href=
-                "https://api.whatsapp.com/send?phone=573248292024&text=Hola+Quisiera+Consultar+Sobre+El+Siguiente+Tema&utm_source=Web&utm_medium=Boton_Flotante_Home&utm_campaign=Masificacion_WhatsApp_Boton_Flotante">
-                <p>324 8292024</p></a>
-            </div>
-        </div>
-        <a class="DerechoAutor"><p>Derechos de autor © 2023 Fundación Comunica</p></a>
-    </footer>
-</body>
-</html> -->
