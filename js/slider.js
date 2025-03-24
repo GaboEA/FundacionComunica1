@@ -4,28 +4,22 @@
     const buttonBefore = document.querySelector('#before');
     let value;
 
-    buttonNext.addEventListener('click',()=>{
-        changePosition(1);
-    })
+    buttonNext.addEventListener('click',() => {changePosition(1);});
 
-    buttonBefore.addEventListener('click',()=>{
-        changePosition(-1);
-    })
+    buttonBefore.addEventListener('click',() => {changePosition(-1);});
 
-    const changePosition = (add)=>{
+    const changePosition = (add) => {
         const currentTestimony = document.querySelector('.news_body--show').dataset.id;
         value = Number(currentTestimony);
-        value+= add;
+        value += add;
 
-        sliders[Number(currentTestimony)-1].classList.remove('news_body--show');
+        sliders[Number(currentTestimony) - 1].classList.remove('news_body--show');
         
-        if(value === sliders.length+1 || value === 0){
+        if(value === sliders.length + 1 || value === 0) {
             value = value === 0 ? sliders.length : 1;
         }
 
-        sliders[value-1].classList.add('news_body--show');
-        console.log(value);
-    }
-
-
+        sliders[value - 1].classList.add('news_body--show');
+        // console.log(value);
+    };
 })();
