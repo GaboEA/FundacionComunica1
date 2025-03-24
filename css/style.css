@@ -226,11 +226,30 @@ body{
 
 .arrow_up:hover{
     filter: drop-shadow(0 0px 3px #a47e62);
+    opacity: 0.8;
 }
 
 .nav_links:hover{
     color: #ffffff;
     border-radius: 5px;
+}
+
+.news_arrow2{
+    cursor: pointer;
+}
+
+.news_arrow2:hover{
+    filter: drop-shadow(0 0px 3px #8a8a89);
+    opacity: 0.8;
+}
+
+.news_arrow{
+    cursor: pointer;
+}
+
+.news_arrow:hover{
+    filter: drop-shadow(0 0px 3px #8a8a89);
+    opacity: 0.8;
 }
 
 /* General */
